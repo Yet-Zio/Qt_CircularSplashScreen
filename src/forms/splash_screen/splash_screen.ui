@@ -70,7 +70,7 @@
         <widget class="QFrame" name="circle_bg">
          <property name="styleSheet">
           <string notr="true">QFrame{
-	background-color: #282a36;
+	background-color: #585858;
 	color: #f8f8f2;
 	border-radius: 120px;
 	font: 9pt &quot;Segoe UI&quot;;
@@ -100,10 +100,16 @@
           </property>
           <item>
            <widget class="QFrame" name="texts">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>90</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
               <width>16777215</width>
-              <height>180</height>
+              <height>200</height>
              </size>
             </property>
             <property name="styleSheet">
@@ -116,6 +122,9 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="topMargin">
+              <number>25</number>
+             </property>
              <item>
               <layout class="QGridLayout" name="gridLayout">
                <item row="0" column="0">
@@ -125,6 +134,10 @@
                    <width>0</width>
                    <height>30</height>
                   </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 8pt &quot;Cascadia Code&quot;;
+color: #aeaeae;</string>
                  </property>
                  <property name="text">
                   <string>Grim(rr) Text Editor</string>
@@ -148,16 +161,25 @@
                  <property name="frameShadow">
                   <enum>QFrame::Raised</enum>
                  </property>
-                </widget>
-               </item>
-               <item row="3" column="0">
-                <widget class="QLabel" name="loading">
-                 <property name="text">
-                  <string>loading...</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
+                 <widget class="QLabel" name="iconSplash">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>0</y>
+                    <width>101</width>
+                    <height>71</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap>../grimrrico/60px/Group 5.png</pixmap>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
                 </widget>
                </item>
                <item row="2" column="0">
@@ -200,8 +222,8 @@
                     </property>
                     <property name="styleSheet">
                      <string notr="true">QLabel{
-	color: rgb(151, 159, 200);
-	background-color: rgb(68,71,90);
+	color: #aeaeae;
+	background-color: #737373;
 	border-radius: 12px;
 }</string>
                     </property>
@@ -214,6 +236,20 @@
                    </widget>
                   </item>
                  </layout>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="loading">
+                 <property name="styleSheet">
+                  <string notr="true">font: 8pt &quot;Cascadia Code&quot;;
+color: #aeaeae;</string>
+                 </property>
+                 <property name="text">
+                  <string>loading...</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
               </layout>
